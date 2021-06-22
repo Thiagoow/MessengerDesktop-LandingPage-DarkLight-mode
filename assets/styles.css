@@ -134,4 +134,41 @@ header .logo {
   .storeDown img {
     height: 6vh;
   }
+
+  .resourcesGrid .left {
+    margin-top: 40%;
+  }
+}
+
+.resourcesGrid {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  grid-gap: 6em;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.resourcesGrid section {
+  display: grid;
+  grid-gap: 3em;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.resourcesGrid img {
+  width: 8vh;
+  margin-bottom: -1rem;
+}
+
+.resourcesGrid p {
+  color: var(--txtColor);
+  margin-top: -1rem;
+}
+
+.resourcesGrid .right {
+  margin-top: -2rem;
 }
