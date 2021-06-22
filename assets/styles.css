@@ -45,7 +45,7 @@ header .logo {
   transition: opacity 0.2s ease-in;
 }
 
-.main {
+main {
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,40 +135,65 @@ header .logo {
     height: 6vh;
   }
 
-  .resourcesGrid .left {
-    margin-top: 40%;
+  .grid {
+    width: 60%;
+  }
+
+  .grid p {
+    font-size: 1rem;
+  }
+
+  .grid h3 {
+    font-size: 1rem;
   }
 }
 
 .resourcesGrid {
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  grid-gap: 6em;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.resourcesGrid section {
-  display: grid;
-  grid-gap: 3em;
-  justify-content: center;
-  align-items: center;
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid .cells {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
   text-align: left;
 }
 
-.resourcesGrid img {
-  width: 8vh;
-  margin-bottom: -1rem;
+.grid .paddingTop {
+  padding-top: 3rem;
 }
 
-.resourcesGrid p {
+.grid .paddingBottom {
+  padding-bottom: 3rem;
+  border-bottom: 1.5px solid var(--txtColor);
+}
+
+.grid .paddingRight {
+  padding-right: 3rem;
+  border-right: 1.5px solid var(--txtColor);
+}
+
+.grid .paddingLeft {
+  padding-left: 3rem;
+}
+
+.grid img {
+  margin-bottom: 5px;
+  align-self: left;
+  width: 6vh;
+}
+
+.grid p {
+  margin-top: 5px;
   color: var(--txtColor);
-  margin-top: -1rem;
-}
-
-.resourcesGrid .right {
-  margin-top: -2rem;
+  width: 100%;
 }
