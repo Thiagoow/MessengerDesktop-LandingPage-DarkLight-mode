@@ -165,7 +165,7 @@ main {
   }
 
   .storeDown img {
-    height: 5vh;
+    height: 6vh;
   }
 
   .grid {
@@ -222,6 +222,10 @@ main {
 }
 
 @media (max-width: 550px) {
+  .storeDown img {
+    height: 5vh;
+  }
+
   .mobileContainer .main {
     margin-top: 2rem;
   }
