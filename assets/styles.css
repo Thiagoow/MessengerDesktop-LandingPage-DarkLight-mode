@@ -220,6 +220,19 @@ main {
   }
 }
 
+@media (max-width: 500px) {
+  .mobileContainer {
+    display: contents;
+  }
+
+  .containerMain .title {
+    display: none;
+  }
+
+  .containerIllustration {
+  }
+}
+
 @media (min-width: 815px) {
   .resourcesGrid {
     display: flex;
@@ -285,7 +298,11 @@ main {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.473);
   }
 
-  container .title {
+  .mobileContainer {
+    display: none;
+  }
+
+  .containerMain .title {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.2;
@@ -332,10 +349,6 @@ main {
 }
 
 @media (min-width: 1300px) {
-  .containerMain {
-    margin-right: -10rem;
-  }
-
   container {
     width: 70%;
     display: flex;
@@ -348,7 +361,15 @@ main {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.473);
   }
 
-  container .title {
+  .mobileContainer {
+    display: none;
+  }
+
+  .containerMain {
+    margin-right: -10rem;
+  }
+
+  .containerMain .title {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.2;
