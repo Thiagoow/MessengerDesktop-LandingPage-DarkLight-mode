@@ -150,7 +150,7 @@ main {
   }
 
   .divTitle .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 7rem; /*Se header fixo = 6.5rem
     se header não fixo = 3rem*/
   }
@@ -437,6 +437,8 @@ footer {
   margin-top: 6rem;
   background: var(--bgDivDark);
   display: flex;
+  /*Permite o conteúdo quebrar um abaixo do outro
+  se o width requisitar:*/
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
