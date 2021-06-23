@@ -69,6 +69,7 @@ main {
 
 .divTitle {
   width: 60%;
+  /* Alinha a subtitle msm com o width menor:*/
   display: contents;
 }
 
@@ -236,6 +237,10 @@ main {
 
   .containerIllustration {
     display: none;
+  }
+
+  .divTitle {
+    width: 90%;
   }
 }
 
@@ -427,11 +432,12 @@ main {
 }
 
 footer {
-  height: 5rem;
+  height: 6rem;
   width: 100%;
   margin-top: 6rem;
   background: var(--bgDivDark);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
