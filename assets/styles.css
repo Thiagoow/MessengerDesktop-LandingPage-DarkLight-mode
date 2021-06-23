@@ -220,9 +220,14 @@ main {
   }
 }
 
-@media (max-width: 500px) {
-  .mobileContainer {
-    display: contents;
+@media (max-width: 550px) {
+  .mobileContainer .main {
+    margin-top: 2rem;
+  }
+
+  .down {
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
   }
 
   .containerMain .title {
@@ -230,6 +235,13 @@ main {
   }
 
   .containerIllustration {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .mobileContainer {
+    display: none;
   }
 }
 
@@ -299,7 +311,7 @@ main {
   }
 
   .mobileContainer {
-    display: none;
+    display: hidden;
   }
 
   .containerMain .title {
