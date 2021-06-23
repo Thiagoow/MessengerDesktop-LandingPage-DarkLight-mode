@@ -127,7 +127,7 @@ main {
   width: 90%;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 815px) {
   .divTitle {
     width: 90%;
   }
@@ -146,10 +146,49 @@ main {
   .grid h3 {
     font-size: 1rem;
   }
+  .resourcesGrid {
+    display: inline-block;
+    flex-direction: line;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .grid {
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  .grid .cells {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .grid .paddingTop {
+    border-top: 1.5px solid var(--txtColor);
+  }
+
+  .grid .paddingLeft {
+    border-top: 1.5px solid var(--txtColor);
+  }
+
+  .grid img {
+    margin-bottom: 5px;
+    align-self: left;
+    width: 6vh;
+  }
+
+  .grid p {
+    margin-top: 5px;
+    color: var(--txtColor);
+    width: 100%;
+  }
 }
 
-/*
-@media (min-width: 570px) {
+@media (min-width: 815px) {
   .resourcesGrid {
     display: flex;
     flex-direction: column;
@@ -199,40 +238,4 @@ main {
     color: var(--txtColor);
     width: 100%;
   }
-}
-*/
-
-.resourcesGrid {
-  display: inline-block;
-  flex-direction: line;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.grid {
-  display: inline-block;
-  justify-content: space-between;
-}
-
-.grid .cells {
-  width: 100%;
-  display: inline-block;
-  text-align: left;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  border-bottom: 1.5px solid var(--txtColor);
-}
-
-.grid img {
-  margin-bottom: 5px;
-  align-self: left;
-  width: 6vh;
-}
-
-.grid p {
-  margin-top: 5px;
-  color: var(--txtColor);
-  width: 100%;
 }
