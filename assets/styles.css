@@ -34,6 +34,7 @@ header {
   */
   vertical-align: middle;
   background: var(--bg);
+  z-index: 10;
 }
 
 header .logo {
@@ -80,6 +81,7 @@ main {
   se header não fixo = 3rem*/
   line-height: 1;
   color: var(--titleColor);
+  z-index: 2;
 }
 
 .divTitle .subtitle {
@@ -91,6 +93,7 @@ main {
   align-items: center;
   vertical-align: center;
   width: 60%;
+  z-index: 2;
 }
 
 .divDown {
@@ -100,6 +103,7 @@ main {
   /*Faz o botão ficar acima dos botões de download:*/
   flex-direction: column;
   padding-top: 1rem;
+  z-index: 2;
 }
 
 .btnDown {
@@ -117,6 +121,7 @@ main {
   margin-bottom: 1rem;
   width: 40%;
   font-size: 20px;
+  z-index: 2;
 }
 
 .storeDown {
@@ -138,6 +143,7 @@ main {
 
 .mainImage {
   margin-top: 3rem;
+  z-index: 1;
 }
 
 .mainImage img {
@@ -170,6 +176,7 @@ main {
 
   .grid {
     width: 60%;
+    z-index: 2;
   }
 
   .grid p {
@@ -198,6 +205,7 @@ main {
     text-align: left;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    z-index: 2;
   }
 
   .grid .paddingTop {
@@ -223,11 +231,12 @@ main {
 
 @media (max-width: 550px) {
   .storeDown img {
-    height: 1.5rem;
+    height: 2.5rem;
   }
 
   .mobileContainer .main {
     margin-top: 2rem;
+    z-index: 2;
   }
 
   .down {
@@ -246,11 +255,136 @@ main {
   .divTitle {
     width: 90%;
   }
+
+  /*Emojis em frente da .mainImage: */
+  .emojis {
+    position: relative;
+  }
+
+  .emojis .emojiIcon {
+    width: 20%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  /*---------Emojis on left side:*/
+
+  /*Two Hearts*/
+  .emojiIcon:nth-of-type(1) {
+    left: 0px;
+    bottom: 380px;
+    transform: rotate(-20deg);
+  }
+
+  /*Smile*/
+  .emojiIcon:nth-of-type(2) {
+    left: 0px;
+    bottom: 150px;
+    transform: rotate(0deg);
+    width: 25%;
+    z-index: 1;
+  }
+
+  /*Surprise*/
+  .emojiIcon:nth-of-type(3) {
+    left: 0px;
+    bottom: -20px;
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+
+  /*---------Emojis on right side:*/
+
+  /*Love*/
+  .emojiIcon:nth-of-type(4) {
+    right: 0px;
+    bottom: 420px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*100*/
+  .emojiIcon:nth-of-type(5) {
+    right: 20px;
+    bottom: 180px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*Two Hearts Bottom*/
+  .emojiIcon:nth-of-type(6) {
+    right: 20px;
+    bottom: -90px;
+    transform: rotate(20deg);
+  }
 }
 
 @media (min-width: 550px) {
   .mobileContainer {
     display: none;
+  }
+
+  /*Emojis em frente da .mainImage: */
+  .emojis {
+    position: relative;
+  }
+
+  .emojis .emojiIcon {
+    width: 20%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  /*---------Emojis on left side:*/
+
+  /*Two Hearts*/
+  .emojiIcon:nth-of-type(1) {
+    left: 0px;
+    bottom: 450px;
+    transform: rotate(-20deg);
+  }
+
+  /*Smile*/
+  .emojiIcon:nth-of-type(2) {
+    left: 10px;
+    bottom: 160px;
+    transform: rotate(0deg);
+    width: 25%;
+    z-index: 1;
+  }
+
+  /*Surprise*/
+  .emojiIcon:nth-of-type(3) {
+    left: 0px;
+    bottom: -50px;
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+
+  /*---------Emojis on right side:*/
+
+  /*Love*/
+  .emojiIcon:nth-of-type(4) {
+    right: 0px;
+    bottom: 450px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*100*/
+  .emojiIcon:nth-of-type(5) {
+    right: 10px;
+    bottom: 200px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*Two Hearts Bottom*/
+  .emojiIcon:nth-of-type(6) {
+    right: 26px;
+    bottom: -40px;
+    transform: rotate(20deg);
+    z-index: 1;
   }
 }
 
@@ -261,6 +395,7 @@ main {
     width: 60%;
     margin-top: 3rem;
     margin-bottom: 6rem;
+    z-index: 2;
   }
 
   .grid {
@@ -273,6 +408,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: left;
+    z-index: 2;
   }
 
   .grid .paddingTop {
@@ -304,6 +440,68 @@ main {
     color: var(--txtColor);
     width: 100%;
   }
+
+  /*Emojis em frente da .mainImage: */
+  .emojis {
+    position: relative;
+  }
+
+  .emojis .emojiIcon {
+    width: 20%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  /*---------Emojis on left side:*/
+
+  /*Two Hearts*/
+  .emojiIcon:nth-of-type(1) {
+    left: 0px;
+    bottom: 700px;
+    transform: rotate(-20deg);
+  }
+
+  /*Smile*/
+  .emojiIcon:nth-of-type(2) {
+    left: 0px;
+    bottom: 300px;
+    transform: rotate(0deg);
+    width: 25%;
+    z-index: 1;
+  }
+
+  /*Surprise*/
+  .emojiIcon:nth-of-type(3) {
+    left: -10px;
+    bottom: -20px;
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+
+  /*---------Emojis on right side:*/
+
+  /*Love*/
+  .emojiIcon:nth-of-type(4) {
+    right: 0px;
+    bottom: 650px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*100*/
+  .emojiIcon:nth-of-type(5) {
+    right: -10px;
+    bottom: 300px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*Two Hearts Bottom*/
+  .emojiIcon:nth-of-type(6) {
+    right: 0px;
+    bottom: -100px;
+    transform: rotate(20deg);
+  }
 }
 
 @media (max-width: 1300px) {
@@ -317,10 +515,12 @@ main {
     background: var(--bgDiv);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.473);
+    z-index: 2;
   }
 
   .mobileContainer {
     display: hidden;
+    z-index: 2;
   }
 
   .containerMain .title {
@@ -380,6 +580,7 @@ main {
     background: var(--bgDiv);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.473);
+    z-index: 2;
   }
 
   .mobileContainer {
@@ -435,6 +636,133 @@ main {
   }
 }
 
+/*Emojis em frente da .mainImage: */
+@media (min-width: 940px) {
+  .emojis {
+    position: relative;
+  }
+
+  .emojis .emojiIcon {
+    width: 20%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  /*---------Emojis on left side:*/
+
+  /*Two Hearts*/
+  .emojiIcon:nth-of-type(1) {
+    left: -20px;
+    bottom: 580px;
+    transform: rotate(-20deg);
+  }
+
+  /*Smile*/
+  .emojiIcon:nth-of-type(2) {
+    left: -70px;
+    bottom: 300px;
+    transform: rotate(0deg);
+    width: 25%;
+    z-index: 1;
+  }
+
+  /*Surprise*/
+  .emojiIcon:nth-of-type(3) {
+    left: -50px;
+    bottom: -20px;
+    transform: rotate(0deg);
+  }
+
+  /*---------Emojis on right side:*/
+
+  /*Love*/
+  .emojiIcon:nth-of-type(4) {
+    right: 0px;
+    bottom: 700px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*100*/
+  .emojiIcon:nth-of-type(5) {
+    right: -50px;
+    bottom: 300px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*Two Hearts Bottom*/
+  .emojiIcon:nth-of-type(6) {
+    right: -50px;
+    bottom: -100px;
+    transform: rotate(20deg);
+  }
+}
+
+/*Emojis em frente da .mainImage: */
+@media (max-width: 380px) {
+  /*Emojis em frente da .mainImage: */
+  .emojis {
+    position: relative;
+  }
+
+  .emojis .emojiIcon {
+    width: 20%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  /*---------Emojis on left side:*/
+
+  /*Two Hearts*/
+  .emojiIcon:nth-of-type(1) {
+    left: 0px;
+    bottom: 250px;
+    transform: rotate(-20deg);
+  }
+
+  /*Smile*/
+  .emojiIcon:nth-of-type(2) {
+    left: 0px;
+    bottom: 120px;
+    transform: rotate(0deg);
+    width: 25%;
+    z-index: 1;
+  }
+
+  /*Surprise*/
+  .emojiIcon:nth-of-type(3) {
+    left: 0px;
+    bottom: -30px;
+    transform: rotate(0deg);
+  }
+
+  /*---------Emojis on right side:*/
+
+  /*Love*/
+  .emojiIcon:nth-of-type(4) {
+    right: 0px;
+    bottom: 270px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*100*/
+  .emojiIcon:nth-of-type(5) {
+    right: 10px;
+    bottom: 130px;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+
+  /*Two Hearts Bottom*/
+  .emojiIcon:nth-of-type(6) {
+    right: 6px;
+    bottom: -50px;
+    transform: rotate(20deg);
+  }
+}
+
 footer {
   height: 6rem;
   width: 100%;
@@ -448,6 +776,7 @@ footer {
   justify-content: center;
   vertical-align: middle;
   font-size: 1rem;
+  z-index: 2;
 }
 
 footer p {
