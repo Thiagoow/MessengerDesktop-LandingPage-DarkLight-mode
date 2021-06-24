@@ -28,11 +28,11 @@ function scrollToId(event) {
 
   //Pega o elemento/link no que eu cliquei:
   const element = event.target;
-
   //Pega o id do elemento/link que eu cliquei
   const id = element.getAttribute("href");
   /* Testando pra ver se deu certo:
   console.log(id);*/
+
   //Retorna a div a partir do id presente no link:
   const pageDivLink = document.querySelector(id).offsetTop;
   /* Retorna a distância da div até o topo:
