@@ -115,7 +115,7 @@ main {
   line-height: 1;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
-  width: 80%;
+  width: 40%;
   font-size: 20px;
 }
 
@@ -132,7 +132,7 @@ main {
 }
 
 .storeDown img {
-  height: 8vh;
+  height: 2.5rem;
   border-radius: 8px;
 }
 
@@ -165,7 +165,7 @@ main {
   }
 
   .storeDown img {
-    height: 6vh;
+    height: 2.5rem;
   }
 
   .grid {
@@ -211,7 +211,7 @@ main {
   .grid img {
     margin-bottom: 5px;
     align-self: left;
-    width: 6vh;
+    width: 2.5rem;
   }
 
   .grid p {
@@ -223,7 +223,7 @@ main {
 
 @media (max-width: 550px) {
   .storeDown img {
-    height: 5vh;
+    height: 1.5rem;
   }
 
   .mobileContainer .main {
@@ -296,7 +296,7 @@ main {
   .grid img {
     margin-bottom: 5px;
     align-self: left;
-    width: 6vh;
+    width: 2.5rem;
   }
 
   .grid p {
