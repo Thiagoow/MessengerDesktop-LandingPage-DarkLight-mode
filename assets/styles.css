@@ -2,7 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --bg: white;
+  font-family: Calibre, "SFProDisplay-Semibold", "Helvetica Neue", "Segoe UI",
+    Helvetica, Arial, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--bg);
+  /*Paleta cores tema claro: */
   --darkBg: black;
   --bgDiv: rgb(235, 235, 235);
   --bgDivDark: rgb(41, 41, 41);
@@ -11,8 +23,79 @@
   --txtColor: grey;
   --txtColorDark: rgb(207, 207, 207);
   --titleColor: black;
-  font-family: Calibre, "SFProDisplay-Semibold", "Helvetica Neue", "Segoe UI",
-    Helvetica, Arial, sans-serif;
+  --footerTxtColor: grey;
+}
+
+.main[darkTheme] {
+  /*
+  transform: scale(1);
+  transition: 1000ms ease-in-out;*/
+
+  /*Paleta cores tema escuro: */
+  --bg: rgb(32, 32, 32);
+  --darkBg: white;
+  --bgDiv: rgb(58, 58, 58);
+  --bgDivDark: rgb(209, 209, 209);
+  --linksColor: grey;
+  --linksColorDark: rgb(0, 0, 0);
+  --txtColor: rgb(185, 185, 185);
+  --txtColorDark: rgb(97, 96, 96);
+  --titleColor: rgb(241, 241, 241);
+  --footerTxtColor: rgb(88, 88, 88);
+}
+
+h3 {
+  color: var(--titleColor);
+}
+
+h2 {
+  color: var(--titleColor);
+}
+
+.darkModeBtn {
+  background: black;
+  align-self: center;
+  margin-right: 10px;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 100%;
+}
+
+box-icon {
+  margin-top: 0.2rem;
+}
+
+.darkModeBtn.active {
+  background: red;
+  transition: 1000ms;
+}
+
+.darkModeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.darkMode {
+  margin-left: 0.5rem;
+  margin-bottom: 3.2rem;
+  width: 650vw;
+  height: 650vw;
+  background: black;
+  transform: scale(0);
+  border-radius: 100%;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.darkMode[active] {
+  transform: scale(1);
+  transition: 1000ms ease-in-out;
 }
 
 header {
@@ -33,8 +116,11 @@ header {
   padding-right: 10rem;
   */
   vertical-align: middle;
-  background: var(--bg);
-  z-index: 10;
+  /*Não consegui deixar o header receber a
+  cor "var(--bg)" sem ficar transparente :c*/
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+  z-index: 3;
 }
 
 header .logo {
@@ -56,16 +142,6 @@ header .logo {
   font-weight: 600;
   line-height: 50px;
   transition: opacity 0.2s ease-in;
-}
-
-main {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: var(--bg);
 }
 
 .divTitle {
@@ -226,6 +302,11 @@ main {
     margin-top: 5px;
     color: var(--txtColor);
     width: 100%;
+  }
+
+  .darkMode {
+    width: 650vh;
+    height: 650vh;
   }
 }
 
@@ -781,7 +862,7 @@ footer {
 
 footer p {
   padding: 1rem;
-  color: var(--txtColor);
+  color: var(--footerTxtColor);
 }
 
 footer a {

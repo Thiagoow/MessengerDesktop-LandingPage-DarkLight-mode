@@ -48,3 +48,12 @@ function scrollToId(event) {
     behavior: "smooth"
   });
 }
+
+/* ----------Fazendo o botão de modo escuro funcionar:*/
+let darkMode = document.querySelector(".main");
+let darkModeBtn = document.querySelector(".darkModeBtn");
+
+darkModeBtn.addEventListener("click", () => {
+  darkMode.toggleAttribute("darkTheme");
+  darkModeBtn.toggleAttribute("active");
+});
