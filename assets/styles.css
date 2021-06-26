@@ -40,7 +40,7 @@
   --linksColorDark: rgb(0, 0, 0);
   --txtColor: rgb(185, 185, 185);
   --txtColorDark: rgb(97, 96, 96);
-  --titleColor: rgb(241, 241, 241);
+  --titleColor: white;
   --footerTxtColor: rgb(88, 88, 88);
 }
 
@@ -315,9 +315,10 @@ header .logo {
     height: 2.5rem;
   }
 
-  .mobileContainer .main {
+  .mobileContainer .up {
     margin-top: 2rem;
     z-index: 2;
+    color: var(--titleColor);
   }
 
   .down {
@@ -752,6 +753,7 @@ header .logo {
     left: -50px;
     bottom: -20px;
     transform: rotate(0deg);
+    z-index: 1;
   }
 
   /*---------Emojis on right side:*/
@@ -816,6 +818,7 @@ header .logo {
     left: 0px;
     bottom: -30px;
     transform: rotate(0deg);
+    z-index: 1;
   }
 
   /*---------Emojis on right side:*/
