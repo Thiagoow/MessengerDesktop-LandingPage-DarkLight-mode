@@ -168,7 +168,7 @@ header .logo {
   .navBarList {
     visibility: hidden;
     display: flex;
-    margin-top: 5px;
+    margin-top: 4.5px;
   }
   .navBarList[active] {
     visibility: visible;
