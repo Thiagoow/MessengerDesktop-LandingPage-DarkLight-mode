@@ -163,7 +163,7 @@ header .logo {
     visibility: visible;
     z-index: 100;
     margin-bottom: -3.2rem;
-    margin-left: 20rem;
+    margin-left: 17.2rem;
   }
   .navBarList {
     visibility: hidden;
@@ -172,6 +172,13 @@ header .logo {
   }
   .navBarList[active] {
     visibility: visible;
+    margin-right: -5rem;
+  }
+  .navBarList[active] a {
+    font-size: 0.8rem;
+  }
+  .navBarList[active] .menu {
+    margin-left: -10rem;
   }
 
   /*Estilização das linhas do menu hambúrguer:*/
