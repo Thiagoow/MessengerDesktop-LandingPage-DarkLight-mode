@@ -145,8 +145,8 @@ header {
 }
 
 header .logo {
-  width: 2rem;
-  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
   /*Centraliza com os demais ícones da página
   ao fazer o scroll 😉:*/
   margin-left: 1rem;
