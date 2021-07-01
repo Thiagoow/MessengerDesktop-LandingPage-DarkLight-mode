@@ -59,3 +59,9 @@ darkModeBtn.addEventListener("click", () => {
 });
 
 /* Menu hambúrguer: */
+let menuBtn = document.querySelector(".menu");
+let mobileNav = document.querySelector(".navBarList");
+
+menuBtn.addEventListener("click", () => {
+  mobileNav.toggleAttribute("active");
+});

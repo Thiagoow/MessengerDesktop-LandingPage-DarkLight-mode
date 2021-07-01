@@ -167,7 +167,14 @@ header .logo {
   }
   .navBarList {
     visibility: hidden;
+    display: flex;
+    margin-top: 5px;
   }
+  .navBarList[active] {
+    visibility: visible;
+  }
+
+  /*Estilização das linhas do menu hambúrguer:*/
   .line {
     fill: none;
     stroke: black;
