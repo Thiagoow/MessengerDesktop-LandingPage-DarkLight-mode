@@ -149,7 +149,7 @@ header .logo {
   height: 2rem;
   /*Centraliza com os demais ícones da página
   ao fazer o scroll 😉:*/
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /*Menu hambúrguer animado: */
