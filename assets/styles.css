@@ -129,9 +129,6 @@ header {
   align-items: center;
   position: fixed;
   justify-content: space-around;
-  /*Centraliza com os demais ícones da página
-  ao fazer o scroll 😉:*/
-  margin-right: 1rem;
   /*Para centralizar os items do header
   sem margem nos cantos (precisa de MediaQuery):
 
@@ -150,6 +147,9 @@ header {
 header .logo {
   width: 2rem;
   height: 2rem;
+  /*Centraliza com os demais ícones da página
+  ao fazer o scroll 😉:*/
+  margin-right: 1rem;
 }
 
 /*Menu hambúrguer animado: */
