@@ -10,4 +10,4 @@ tendo como base o <a href="https://www.youtube.com/watch?v=DfOK5mX2TQM&t=462s" t
 do canal do Youtube: <a href="https://www.youtube.com/channel/UCaSKAM4XZdeJVOpRj04tIQQ" target="_blank">
 Daybreak Development</a></p>
 
-## Demo: https://messengerdesktop.netlify.app/
+## Demo: https://messenger-desktop.vercel.app
